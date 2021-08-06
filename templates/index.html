@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en" style="background-color: pink;">
+    <head>
+        <title>HW2</title>
+        <style>
+            @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap");
+        </style>
+        <link rel="stylesheet" href="../static/style.css">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    </head>
+    <body>
+        <header style="font-family: 'Dancing Script', cursive;">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#Contact">Contact</a></li>
+                <h1 style="text-align: center; color: white; font-family: 'Dancing Script', cursive; font-size: 30px;">HW2</h1>
+            </ul>
+        </header>
+        <br>
+        <br>
+        <hr>
+        <div id="thuVienAnh">
+            <div class="w3-container w3-third Anh">
+                <img src="../static/Anh/shev1.jpg" style="cursor:pointer" 
+                onclick="onClick(this)">
+              </div>
+
+            <div class="w3-container w3-third Anh">
+                <img src="../static/Anh/shev2.jpg" style="cursor:pointer" 
+                onclick="onClick(this)">
+            </div>
+
+            <div class="w3-container w3-third Anh">
+                <img src="../static/Anh/shev3.jpeg" style="cursor:pointer" 
+                onclick="onClick(this)">
+              </div>
+
+              <div class="w3-container w3-third Anh">
+                <img src="../static/Anh/shev4.jpg" style="cursor:pointer" 
+                onclick="onClick(this)">
+              </div>
+
+              <div class="w3-container w3-third Anh">
+                <img src="../static/Anh/shev5.jpg" style="cursor:pointer" 
+                onclick="onClick(this)">
+              </div>
+
+              <div class="w3-container w3-third Anh">
+                <img src="../static/Anh/shev6.jpg" style="cursor:pointer" 
+                onclick="onClick(this)">
+              </div>
+
+              <div class="w3-container w3-third Anh">
+                <img src="../static/Anh/shev7.jpg" style="cursor:pointer" 
+                onclick="onClick(this)">
+              </div>
+
+              <div class="w3-container w3-third Anh">
+                <img src="../static/Anh/shev8.jpg" style="cursor:pointer" 
+                onclick="onClick(this)">
+              </div>
+
+
+            <div id="modal01" class="w3-modal" onclick="this.style.display='none'">
+                <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+                <div class="w3-modal-content w3-animate-zoom">
+                  <img id="img01" style="width:100%">
+                </div>
+            </div>
+
+            <script>
+                function onClick(element) {
+                  document.getElementById("img01").src = element.src;
+                  document.getElementById("modal01").style.display = "block";
+                }
+            </script>
+        </div>
+
+        <div class="zoom"></div>
+        
+        <footer id="Contact">
+            <a href="#top"><p style="text-align: right; font-family: 'Dancing Script', cursive;">Return to top</p></a>
+            <address style="text-align: right; color:snow; font-family: 'Dancing Script', cursive;">
+                Written by Nguyen Thanh Trung.<br>
+                Email: trung24499@gmail.com<br>
+                Home: Vyazemski, 5/7
+            </address>
+        </footer>
+    </body>
+</html>
